@@ -8,7 +8,7 @@ def power(num, pow) -> int:
     :param pow: The power that the number will be raised to
     :return: The value of the number to the given power
     """
-    if type(num) != int and type(pow) != int:
+    if type(num) != int and type(pow) != int and type(num) != float:
         raise TypeError('Not a whole number')
     if pow <= 0 and num == 0:
         raise ValueError('Not positive exponent')
