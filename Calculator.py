@@ -10,7 +10,7 @@ def power(num, pow) -> int:
     """
     if type(num) != int and type(pow) != int:
         raise TypeError('Not a whole number')
-    if pow <= 0:
+    if pow <= 0 and num == 0:
         raise ValueError('Not positive exponent')
     if pow == 1:
         return num
@@ -40,8 +40,8 @@ def square_root(num) -> float:
     :param num: The number that the square root will be found for
     :return: The square root of the number
     """
-    if type(num) != int:
-        raise TypeError('Not a whole number')
+    if type(num) != int and type(num) != float:
+        raise TypeError('Not a numeric input')
     if num <= 0:
         raise ValueError('Not positive')
     return math.sqrt(num)
