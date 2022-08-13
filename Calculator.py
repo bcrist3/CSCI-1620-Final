@@ -10,7 +10,7 @@ def power(num, pow) -> int:
     """
     if type(num) != int and type(pow) != int and type(num) != float:
         raise TypeError('Not a whole number')
-    if pow <= 0 and num == 0:
+    if pow <= 0 and num <= 0:
         raise ValueError('Not positive exponent')
     if pow == 1:
         return num
