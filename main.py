@@ -8,7 +8,7 @@ def main():
     window.title('Calculator')
     # Sets the window geometry
     window.geometry('500x600')
-    # Makes the window unable to be resizabled
+    # Makes the window unable to be resized
     window.resizable(False, False)
     # Creates a notebook
     notebook = ttk.Notebook(window)
